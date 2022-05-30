@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/nys06/AndroidStudioProjects/HackerTon2/app/src/main/res/layout/activity_form.xml" value="0.1323529411764706" />
+        <entry key="..\:/Users/nys06/AndroidStudioProjects/HackerTon2/app/src/main/res/layout/activity_intro.xml" value="0.21904761904761905" />
+        <entry key="..\:/Users/nys06/AndroidStudioProjects/HackerTon2/app/src/main/res/layout/activity_main.xml" value="0.27960666951688756" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
