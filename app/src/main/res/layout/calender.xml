@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calenderLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+   <com.google.android.material.textview.MaterialTextView
+       android:id="@+id/calenderText"
+       android:text="number"
+       android:textSize="24dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/calenderImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        android:layout_margin="20dp"/>
+</LinearLayout>
