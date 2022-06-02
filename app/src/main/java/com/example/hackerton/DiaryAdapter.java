@@ -1,6 +1,10 @@
 package com.example.hackerton;
 
+import static android.content.Context.MODE_PRIVATE;
+
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,16 +19,12 @@ public class DiaryAdapter extends BaseAdapter {
     ArrayList<DiaryItem> diaryItems;
     Context context;
     LayoutInflater inflater;
-    String[] categoryImages = {"category1.jpg", "category2.jpg", "category3.jpg", "category4.jpg", "category5.jpg"};
+    int[] categoryImages = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four, R.drawable.five, R.drawable.zero};
 
     public DiaryAdapter(ArrayList<DiaryItem> diaryItems, Context context) {
         this.diaryItems = diaryItems;
         this.context = context;
     }
-
-
-
-
 
     @Override
     public int getCount() {
@@ -32,30 +32,37 @@ public class DiaryAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int i) {
-        return diaryItems.get(i);
+    public Object getItem(int position) {
+        return diaryItems.get(position);
     }
 
     @Override
-    public long getItemId(int i) {
+    public long getItemId(int position) {
         return 0;
     }
 
+    @SuppressLint("ResourceType")
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        if (inflater==null){
-            inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    public View getView(int position, View view, ViewGroup parent) {
+        if (inflater == null) {
+            inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
 
-        if(view==null){
-            view = inflater.inflate(R.layout.calender,null);
+        if (view == null) {
+            view = inflater.inflate(R.layout.calendar_layout, null);
         }
 
-        MaterialTextView calenderText = view.findViewById(R.id.calenderText);
-        ShapeableImageView calenderImg = view.findViewById(R.id.calenderImg);
+        MaterialTextView calendarNumber = view.findViewById(R.id.calendarNumber);
+        ShapeableImageView calendarImage = view.findViewById(R.id.calendarImage);
 
-        calenderText.setText(Integer.toString(i+1));
-        calenderImg.setImageResource(Integer.parseInt(categoryImages[i]));
+        if (position < 3) {
+            calendarNumber.setText("");
+        } else {
+            calendarNumber.setText(Integer.toString(position - 2));
+        }
+
+        calendarImage.setImageResource(categoryImages[diaryItems.get(position).getCategory()]);
+
         return view;
     }
 }

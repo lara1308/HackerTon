@@ -4,34 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/mainToolBar"
-        android:background="?attr/colorPrimary"
+    <ImageView
+        android:id="@+id/mainToolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"/>
+        android:layout_height="70dp"
+        android:background="@drawable/main_toolbar"
+        android:elevation="4dp" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="360px"
-        android:layout_height="180px"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/month" />
+        app:srcCompat="@drawable/month"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
 
     <GridView
+        android:id="@+id/gridView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:numColumns="7"/>
+        android:numColumns="7"
+        android:layout_margin="20dp"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/mainBtn"
+        android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
-        android:layout_margin="20dp"/>
-
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="#C483FF">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 </LinearLayout>

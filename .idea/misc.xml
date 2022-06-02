@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1145083932853717" />
         <entry key="..\:/Users/nys06/AndroidStudioProjects/HackerTon2/app/src/main/res/layout/activity_form.xml" value="0.1323529411764706" />
         <entry key="..\:/Users/nys06/AndroidStudioProjects/HackerTon2/app/src/main/res/layout/activity_intro.xml" value="0.21904761904761905" />
         <entry key="..\:/Users/nys06/AndroidStudioProjects/HackerTon2/app/src/main/res/layout/activity_main.xml" value="0.27960666951688756" />
-        <entry key="..\:/Users/nys06/AndroidStudioProjects/HackerTon2/app/src/main/res/layout/calender.xml" value="0.29157759726378796" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/activity_diary.xml" value="0.19659576416015628" />
+        <entry key="app/src/main/res/layout/activity_form.xml" value="0.27712860107421877" />
+        <entry key="app/src/main/res/layout/activity_intro.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/calendar_layout.xml" value="0.20921783447265624" />
       </map>
     </option>
   </component>

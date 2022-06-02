@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormActivity"
+    >
+
+    <ImageView
+        android:id="@+id/diaryToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/diary_toolbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/diaryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text="Title"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        style="@style/Widget.MaterialComponents.TextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/diaryContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:scrollbars="vertical"
+        android:text="Content"
+        android:textSize="16dp"
+        android:layout_margin="20dp"
+        style="@style/Widget.MaterialComponents.TextView" />
+
+    <ImageView
+        android:id="@+id/diaryImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_add_a_photo_24"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/diaryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:text="확인"
+        android:textSize="20dp"
+        app:backgroundTint="#D284FF" />
+</LinearLayout>

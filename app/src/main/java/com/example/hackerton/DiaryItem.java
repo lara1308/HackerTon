@@ -1,16 +1,15 @@
 package com.example.hackerton;
 
 public class DiaryItem {
-
     int date;
-    String tittle;
+    String title;
     int category;
     String imageUrl;
     String content;
 
-    public DiaryItem(int date, String tittle, int category, String imageUrl, String content) {
+    public DiaryItem(int date, String title, int category, String imageUrl, String content) {
         this.date = date;
-        this.tittle = tittle;
+        this.title = title;
         this.category = category;
         this.imageUrl = imageUrl;
         this.content = content;
@@ -24,12 +23,12 @@ public class DiaryItem {
         this.date = date;
     }
 
-    public String getTittle() {
-        return tittle;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTittle(String tittle) {
-        this.tittle = tittle;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public int getCategory() {
